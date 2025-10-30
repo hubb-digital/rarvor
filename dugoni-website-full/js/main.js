@@ -1,1 +1,0 @@
-document.addEventListener('DOMContentLoaded',()=>{console.log('Dugoni Strategy House carregado');});
