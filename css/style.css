@@ -110,6 +110,10 @@ small { font-size: 0.8em; }
 .brand b {
     font-weight: 700;
 }
+.brand .logo {
+    width: 140px;
+    margin-right: 20px;
+}
 .crest {
     /* Placeholder para um logo ou ícone */
     display: inline-block;
@@ -133,7 +137,15 @@ small { font-size: 0.8em; }
     margin-left: 30px;
     padding: 8px 18px;
 }
-
+@media (max-width: 768px) {
+    .brand {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .brand .logo {
+       margin: 0 0 20px 0;
+    }
+}
 /* -------------------------------------------------------------------------- */
 /* 3. SECAO HERO (TOPO) */
 /* -------------------------------------------------------------------------- */
