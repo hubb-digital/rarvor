@@ -1,8 +1,7 @@
  
 /* -------------------------------------------------------------------------- */
-/* 1. VARIAVEIS E BASE */
+/*  VARIAVEIS E BASE */
 /* -------------------------------------------------------------------------- */
-
 :root {
     --color-primary: #1a1a1a; /* Preto quase absoluto */
     --color-secondary: #5c6773; /* Cinza escuro para texto secundário */
@@ -14,13 +13,11 @@
     --padding-section: 60px;
     --wrap-max-width: 1200px;
 }
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
 body {
     font-family: var(--font-body);
     line-height: 1.6;
@@ -28,7 +25,6 @@ body {
     background-color: var(--color-bg);
     scroll-behavior: smooth;
 }
-
 /* Base Tipografia */
 h1, h2, h3 {
     font-family: var(--font-heading);
@@ -40,14 +36,12 @@ h2 { font-size: 2.5rem; }
 h3 { font-size: 1.8rem; }
 p { margin-bottom: 1em; }
 small { font-size: 0.8em; }
-
 /* Wrapper Central */
 .wrap {
     max-width: var(--wrap-max-width);
     margin: 0 auto;
     padding: 0 20px;
 }
-
 /* Botoes */
 .btn {
     display: inline-block;
@@ -79,12 +73,64 @@ small { font-size: 0.8em; }
     background-color: var(--color-primary);
     color: var(--color-bg);
 }
-
+/* -------------------------------------------------------------------------- */
+/*  SECOES PADRAO E LAYOUTS */
+/* -------------------------------------------------------------------------- */
+section {
+    padding: var(--padding-section) 0;
+}
+section:nth-child(even) {
+    background-color: var(--color-bg-dark);
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+ul{
+    margin: 20px 20px 0 20px;
+}
+  li::marker {
+  color: var(--color-accent);
+}
+.items-start {
+    align-items: flex-start;
+} 
+.mr-4 {
+    margin-right: 1rem;
+}
+.flex {
+    display: flex;
+}
+.h-10 {
+    height: 2.5rem;
+}
+.w-10 {
+    width: 2.5rem;
+}
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
+.items-center {
+    align-items: center;
+}
+.justify-center {
+    justify-content: center;
+}
+.rounded-full {
+    border-radius: 9999px;
+}
+.bg-rarvor-accent { 
+    background-color: var(--color-accent);
+    color:#fff;
+}
+.italic {
+    font-style: italic;
+}
 
 /* -------------------------------------------------------------------------- */
-/* 2. NAVEGACAO (HEADER) */
+/*  NAVEGACAO (HEADER) */
 /* -------------------------------------------------------------------------- */
-
 .nav {
     position: sticky;
     top: 0;
@@ -139,9 +185,8 @@ small { font-size: 0.8em; }
 }
 
 /* -------------------------------------------------------------------------- */
-/* 3. SECAO HERO (TOPO) */
+/*  SECAO HERO (TOPO) */
 /* -------------------------------------------------------------------------- */
-
 .hero {
     position: relative;
     min-height: 80vh;
@@ -164,10 +209,10 @@ small { font-size: 0.8em; }
     filter: brightness(0.2) grayscale(100%); /* Escurece e dessatura a imagem */
 }
 .hero-body {
-    color: var(--color-primary);
+    /* color: var(--color-primary);
     padding-top: 50px;
-    padding-bottom: 50px;
-    max-width: 800px;
+    padding-bottom: 50px; */
+    /* max-width: 800px; */
 }
 .eyebrow {
     font-size: 1rem;
@@ -194,24 +239,7 @@ small { font-size: 0.8em; }
     max-width: 600px;
     margin-bottom: 30px;
 }
-
-/* Pilulas de Destaque */
-.pills {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-}
-.pill {
-    font-size: 0.8rem;
-    padding: 5px 12px;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-    border-radius: 20px;
-    color: var(--color-primary);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
+ 
 /* CTAs do Hero */
 .hero-cta {
     display: flex;
@@ -235,73 +263,18 @@ small { font-size: 0.8em; }
     background-color: var(--color-bg);
     color: var(--color-primary);
 }
-
-/* Stats (KPIS) */
-.hero-stats {
-    display: flex;
-    gap: 40px;
-}
-.stat {
-    color: var(--color-primary);
-}
-.stat b {
-    display: block;
-    font-size: 2.2rem;
-    font-family: var(--font-heading);
-    margin-bottom: 0;
-}
-.stat small {
-    display: block;
-    text-transform: uppercase;
-    opacity: 0.8;
-}
+ 
 
 /* -------------------------------------------------------------------------- */
-/* 4. SECOES PADRAO E LAYOUTS */
+/*  SECAO 'O QUE NOS MOVE'  */
 /* -------------------------------------------------------------------------- */
-
-section {
-    padding: var(--padding-section) 0;
-}
-section:nth-child(even) {
-    background-color: var(--color-bg-dark);
-}
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Logos (Trust Section) */
-.trust {
-    background-color: var(--color-primary);
-    padding: 20px 0;
-}
-.logos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
-}
-.logo img {
-    max-height: 35px;
-    opacity: 0.6;
-    filter: brightness(0) invert(1); /* Torna os logos brancos */
-    transition: opacity 0.3s;
-}
-.logo img:hover {
-    opacity: 1;
-}
-
-/* Secao 'Por Que' */
-.why {
+.what {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
     align-items: center;
 }
-.why img {
+.what img {
     border-radius: 6px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
@@ -344,13 +317,16 @@ img {
     padding: 20px;
 }
 .tile-body h3 {
+    color: var(--color-accent);
     margin-bottom: 5px;
 }
 .tile-body p {
     color: var(--color-secondary);
 }
 
-/* Cases */
+/* -------------------------------------------------------------------------- */
+/*  SECAO 'CASES'  */
+/* -------------------------------------------------------------------------- */
 .cases {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -360,7 +336,7 @@ img {
 .case {
     display: flex;
     gap: 20px;
-    align-items: flex-start;
+    align-items: center;
 }
 .case img {
     width: 150px;
@@ -371,85 +347,36 @@ img {
 .case-body h3 {
     margin-bottom: 5px;
 }
-.kpis {
-    margin-top: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-.kpi {
-    background-color: var(--color-bg-dark);
-    color: var(--color-primary);
-    padding: 5px 10px;
-    font-size: 0.8rem;
-    border-radius: 4px;
-    font-weight: 600;
-}
 
-/* Quotes (Testemunhos) */
-.quotes {
+/* -------------------------------------------------------------------------- */
+/* SECAO 'POR QUE' */
+/* -------------------------------------------------------------------------- */
+.gap-12 {
+    gap: 3rem;
+}  
+.grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
+} 
+  
+/* -------------------------------------------------------------------------- */
+/* SECAO ' COMO ATUAMOS' */
+/* -------------------------------------------------------------------------- */
+#como-atuamos h2{
+   text-align: center;
 }
-.quote {
-    padding: 30px;
-    background-color: var(--color-bg-dark);
-    border-left: 5px solid var(--color-accent);
+#como-atuamos p {
+    margin-bottom: 0;
+} 
+#como-atuamos li {
+    margin-bottom: 1.5rem;
 }
-.quote p {
-    font-style: italic;
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-}
-.quote b {
-    display: block;
-    font-size: 0.9rem;
-    color: var(--color-secondary);
-}
-
-/* Tiers (Planos) */
-.tiers {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-}
-.tier {
-    padding: 30px;
-    text-align: center;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    flex-basis: 300px;
-    transition: transform 0.3s, border-color 0.3s;
-}
-.tier:hover {
-    transform: translateY(-5px);
-    border-color: var(--color-accent);
-}
-.tier h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: var(--color-accent);
-}
-.tier p{ 
-    margin: 0;
-}
-.badge {
-    font-size: 0.75rem;
-    background-color: var(--color-primary);
-    color: var(--color-bg);
-    padding: 3px 8px;
-    border-radius: 3px;
-    vertical-align: top;
-    margin-left: 5px;
-    text-transform: uppercase;
+#como-atuamos p.text-gray  {
+    color: #7f7f7f;
 }
 
 /* -------------------------------------------------------------------------- */
-/* 5. CONTATO E FOOTER */
+/* SECAO 'CONTATO' E 'FOOTER' */
 /* -------------------------------------------------------------------------- */
-
 #contato form {
     max-width: 600px;
     margin: 40px auto 0;
@@ -471,7 +398,6 @@ img {
 #contato button {
     justify-self: start;
 }
-
 footer {
     background-color: var(--color-primary);
     color: #ccc;
@@ -481,7 +407,6 @@ footer {
 footer strong {
     color: var(--color-bg);
 }
- 
 footer .wrap{
     display:flex;
     justify-content:space-between;
@@ -492,15 +417,17 @@ footer .wrap .logo{
     width: 120px;
 }
 
+
+  
 /* -------------------------------------------------------------------------- */
-/* 6. MEDIA QUERIES (Responsividade) */
+/* MEDIA QUERIES (Responsividade) */
 /* -------------------------------------------------------------------------- */
 
 @media (max-width: 900px) {
-    .why {
+    .what {
         grid-template-columns: 1fr;
     }
-    .why img {
+    .what img {
         order: -1; /* Coloca a imagem no topo no mobile */
     }
     .cases {
@@ -571,7 +498,7 @@ footer .wrap .logo{
     }
     footer .wrap .logo { 
         margin: auto;
-    }
+    }  
 }
 
 @media (max-width: 500px) {
@@ -581,13 +508,10 @@ footer .wrap .logo{
     .lead {
         font-size: 1.1rem;
     }
-    .stat b {
-        font-size: 1.8rem;
-    }
-    .pills {
-        justify-content: center;
-    }
-    .quotes {
-        grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+    .md\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
+
