@@ -48,6 +48,47 @@
     footer .wrap > div:first-child {
       margin-bottom: 15px;
     }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 999;
+    }
+
+    .whatsapp-float a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #25d366;
+      color: white;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-size: 28px;
+      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+    }
+
+    .whatsapp-float a:hover {
+      background: #20ba5a;
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+    }
+
+    @media (max-width: 768px) {
+      .whatsapp-float {
+        bottom: 20px;
+        right: 20px;
+      }
+
+      .whatsapp-float a {
+        width: 55px;
+        height: 55px;
+        font-size: 24px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -348,14 +389,14 @@
       </div>
       <div>
         <div class="social-links" style="margin-bottom: 15px;">
-          <a href="https://www.instagram.com/rarvor_" target="_blank" title="Instagram Rarvor" rel="noopener noreferrer">
+          <a href="https://instagram.com/rarvor" target="_blank" title="Instagram Rarvor" rel="noopener noreferrer">
             <i class="fab fa-instagram"></i>
           </a>
-          <a href="https://www.linkedin.com/company/r-dugoni" target="_blank" title="LinkedIn Rarvor" rel="noopener noreferrer">
+          <a href="https://linkedin.com/company/rarvor" target="_blank" title="LinkedIn Rarvor" rel="noopener noreferrer">
             <i class="fab fa-linkedin"></i>
           </a>
         </div>
-        comercial@rarvor.com.br
+        projetos@rarvor.com.br
       </div>
       <div>© <span id="y"></span> Rarvor</div>
     </div>
@@ -364,4 +405,11 @@
   
   <script src="js/main.js"></script>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
+  <!-- WhatsApp Flutuante -->
+  <div class="whatsapp-float">
+    <a href="https://wa.me/5521978247667" target="_blank" title="WhatsApp Rarvor" rel="noopener noreferrer">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
 </body></html>

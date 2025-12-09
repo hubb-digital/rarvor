@@ -1,1 +1,1 @@
-document.addEventListener('DOMContentLoaded',()=>{console.log('Dugoni Strategy House carregado');});
+document.addEventListener('DOMContentLoaded',()=>{console.log('Rarvor Strategy House carregado');});
