@@ -2,11 +2,11 @@
 /*  VARIAVEIS E BASE */
 /* -------------------------------------------------------------------------- */
 :root {
-    --color-primary: #e8e8e8; /* Cinza claro para texto principal */
-    --color-secondary: #a0a0a0; /* Cinza médio para texto secundário */
+    --color-primary: #d0d0d0; /* Cinza claro para texto principal */
+    --color-secondary: #808080; /* Cinza médio para texto secundário */
     --color-accent: #b38e45; /* Dourado/Bronze mantido igual */
     --color-bg: #0a0a0a; /* Fundo escuro (preto profundo) */
-    --color-bg-dark: #2a2a2a; /* Fundo secundário (cinza escuro) */
+    --color-bg-dark: #151515; /* Fundo secundário (cinza escuro) */
     --font-heading: 'Georgia', serif;
     --font-body: 'Arial', sans-serif;
     --padding-section: 60px;
@@ -384,11 +384,11 @@ li::marker {
 #contato input, #contato textarea {
     width: 100%;
     padding: 15px;
-    border: 1px solid #444;
+    border: 1px solid #333;
     border-radius: 4px;
     font-family: var(--font-body);
     font-size: 1rem;
-    background-color: #2a2a2a;
+    background-color: #151515;
     color: var(--color-primary);
 }
 #contato input::placeholder, #contato textarea::placeholder {
@@ -402,11 +402,11 @@ li::marker {
     justify-self: start;
 }
 footer {
-    background-color: #0f0f0f;
-    color: #888;
+    background-color: #050505;
+    color: #707070;
     padding: 30px 0;
     font-size: 0.9rem;
-    border-top: 1px solid #333;
+    border-top: 1px solid #222;
 }
 footer strong {
     color: var(--color-primary);
