@@ -8,12 +8,47 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <meta property="og:title" content="Rarvor Strategy House — Private Advisory">
   <meta property="og:description" content="Estética, estratégia e crescimento — padrão C-Suite.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="jpg/rarvorLogoDourada.png">
   <meta name="theme-color" content="#0a0a0a">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .social-links {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+      justify-content: center;
+    }
+
+    .social-links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(215, 160, 98, 0.2);
+      color: #d7a062;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-size: 18px;
+      border: 1px solid rgba(215, 160, 98, 0.3);
+    }
+
+    .social-links a:hover {
+      background: #d7a062;
+      color: #0a0a0a;
+      transform: translateY(-3px);
+      border-color: #d7a062;
+    }
+
+    footer .wrap > div:first-child {
+      margin-bottom: 15px;
+    }
+  </style>
 </head>
 <body>
 <header class="nav">
@@ -43,7 +78,7 @@
             <div class="text-lg space-y-6 text-gray-200">
                 <p>A RARVOR nasce da prática: decisões reais, marcas reais, desafios reais. Somos uma operação de marketing e estratégia que trabalha com visão executiva, raciocínio de negócio e capacidade técnica para transformar complexidade em direção clara.</p>
                 <p class="font-semibold text-xl text-white italic">
-                    Nada de frases feitas. Nada de “inspiração”. É análise, método e execução.
+                    Nada de frases feitas. Nada de "inspiração". É análise, método e execução.
                 </p>
             </div>
         </div>
@@ -310,6 +345,14 @@
     <div class="wrap">
       <div>
         <img class="logo" src="jpg/rarvorLogoBranca.png" alt="Logo Rarvor Branca"/><br>Rio de Janeiro • Atuação global
+        <div class="social-links" style="margin-top: 15px;">
+          <a href="https://instagram.com/rarvor" target="_blank" title="Instagram Rarvor" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://linkedin.com/company/rarvor" target="_blank" title="LinkedIn Rarvor" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
       </div>
       <div>comercial@rarvor.com.br</div>
       <div>© <span id="y"></span> Rarvor</div>
