@@ -5,7 +5,7 @@
     --color-primary: #e8e8e8; /* Cinza claro para texto principal */
     --color-secondary: #a0a0a0; /* Cinza médio para texto secundário */
     --color-accent: #b38e45; /* Dourado/Bronze mantido igual */
-    --color-bg: #1a1a1a; /* Fundo escuro (preto) */
+    --color-bg: #0a0a0a; /* Fundo escuro (preto profundo) */
     --color-bg-dark: #2a2a2a; /* Fundo secundário (cinza escuro) */
     --font-heading: 'Georgia', serif;
     --font-body: 'Arial', sans-serif;
