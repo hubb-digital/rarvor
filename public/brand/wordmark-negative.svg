@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 170" role="img" aria-label="RARVOR">
+
+
+  <g fill="none" stroke="#FFFFFF" stroke-width="22" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M18 150V18H80C112 18 128 35 128 61C128 87 112 102 80 102H18M77 102L132 150"/>
+    <path d="M168 150L218 18L268 150M187 99H249"/>
+    <path d="M306 150V18H368C400 18 416 35 416 61C416 87 400 102 368 102H306M365 102L420 150"/>
+    <path d="M454 18L504 150L554 18"/>
+    <rect x="592" y="18" width="106" height="132" rx="32"/>
+    <path d="M742 150V18H804C836 18 852 35 852 61C852 87 836 102 804 102H742M801 102L856 150"/>
+  </g><rect x="888" y="124" width="26" height="26" fill="#D8135B"/>
+</svg>

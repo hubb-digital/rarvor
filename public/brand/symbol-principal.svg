@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="RARVOR">
+
+
+  <g fill="none" stroke="#111111" stroke-width="28" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M42 220V34H126C174 34 202 57 202 94C202 131 174 152 126 152H42"/>
+    <path d="M124 152L211 229"/>
+  </g>
+  <rect x="187" y="78" width="30" height="30" fill="#B0005A"/>
+</svg>
